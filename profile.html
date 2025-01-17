@@ -15,12 +15,74 @@
   </head>
   <body>
     <header>
+      <!-- NAVBAR -->
       <nav>
-        <a class="navabar-brand" href="./index.html" target="_blank">
+        <a class="navabar-brand" href="./index.html">
           <img src="./assets/netflix_logo.png" alt="Netflix Logo" width="200" height="auto"
         /></a>
       </nav>
     </header>
+
+    <!-- EDIT PROFILE -->
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <h1 class="fw-bold text-light">Edit Profile</h1>
+          <hr class="border-secondary" />
+
+          <div class="d-flex align-items-center mb-3">
+            <img src="./assets/avatar.png" alt="Profile Icon" class="rounded" width="100" />
+            <input
+              type="text"
+              class="form-control ms-3 bg-secondary text-white border-secondary rounded-0"
+              value="Strive Student"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label text-light">Language:</label>
+            <select class="form-select bg-black text-white rounded-0">
+              <option>English</option>
+              <option>Italiano</option>
+              <option>Français</option>
+            </select>
+          </div>
+          <hr class="border-secondary" />
+
+          <div class="mb-3">
+            <label class="col-12 form-label text-light">Maturity Settings:</label>
+            <button class="btn btn-secondary btn-dark rounded-0">ALL MATURITY RATINGS</button>
+            <p class="small text-secondary text-light">
+              Show titles of <strong>all maturity ratings</strong> for this profile.
+            </p>
+            <button class="btn btn-outline-secondary rounded-0">EDIT</button>
+          </div>
+          <hr class="border-secondary" />
+
+          <div class="mb-3 text-light">
+            <label class="form-label">Autoplay controls</label>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input bg-dark border-secondary rounded-0" checked />
+              <label class="form-check-label">Autoplay next episode in a series on all devices.</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input bg-dark border-secondary rounded-0" checked />
+              <label class="form-check-label">Autoplay previews while browsing on all devices.</label>
+            </div>
+          </div>
+
+          <hr class="border-secondary" />
+
+          <!-- Buttons -->
+          <div class="d-flex gap-3">
+            <button class="btn btn-light fw-bold rounded-0">SAVE</button>
+            <button class="btn btn-outline-secondary rounded-0">CANCEL</button>
+            <button class="btn btn-outline-secondary rounded-0">DELETE PROFILE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
